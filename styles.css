@@ -93,12 +93,19 @@ html {
 
 .project-tile {
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: white;
 }
 
 .project-tile img {
     width: 100%;
-    height: 300px;
+    height: calc(100% - 3rem);
     object-fit: contain;
+}
+
+.project-tile a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
 }
