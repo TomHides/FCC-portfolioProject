@@ -19,6 +19,7 @@ html {
     justify-content: flex-end;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #navbar ul {
@@ -133,5 +134,54 @@ a.project-tile {
 }
 
 .project-tile:hover {
-    transform: scale(1.02)
+    transform: scale(1.02);
+}
+
+#contact {
+    padding: 100px 0;
+    background-color: rgb(126, 126, 126);
+
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolt;
+    color: lightgray;
+}
+
+#contact p {
+    color: lightgray;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.socials {
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.socials a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 1s;
+
+}
+
+.socials i {
+    padding-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.socials a:hover {
+    transform: translateY(15px)
 }
