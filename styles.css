@@ -185,3 +185,9 @@ a.project-tile {
 .socials a:hover {
     transform: translateY(15px)
 }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
