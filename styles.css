@@ -69,6 +69,7 @@ html {
 #projects {
     background-color: rgb(84, 84, 153);
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #projects h1 {
@@ -82,7 +83,7 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    margin: 0 auto;
+    margin: 4rem auto;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -93,19 +94,44 @@ html {
 
 .project-tile {
     width: 100%;
-    height: 350px;
     background-color: white;
 }
 
 .project-tile img {
     width: 100%;
     height: calc(100% - 3rem);
-    object-fit: contain;
+    object-fit: cover;
 }
 
-.project-tile a {
+a.project-tile {
     display: block;
     text-align: center;
     width: 100%;
     text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.project-tile p {
+    height: 3rem;
+    padding-top: 0.8rem;
+    text-decoration: none;
+    background-color: rgb(126, 126, 126);
+    font-weight: bold;
+    color: white;
+}
+
+.project-tile span {
+    padding: 0px 10px;
+    color: rgb(126, 126, 126);
+    transition: 1s;
+}
+
+.project-tile:hover span {
+    color: orange;
+}
+
+.project-tile:hover {
+    transform: scale(1.02)
 }
